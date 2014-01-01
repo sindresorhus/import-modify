@@ -1,6 +1,6 @@
 {
   "name": "require-modify",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Modify the source of a required module",
   "license": "MIT",
   "repository": "sindresorhus/require-modify",
