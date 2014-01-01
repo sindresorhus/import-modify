@@ -1,0 +1,41 @@
+{
+  "name": "require-modify",
+  "version": "0.0.0",
+  "description": "Modify the source of a required module",
+  "license": "MIT",
+  "repository": "sindresorhus/require-modify",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "require",
+    "modify",
+    "transform",
+    "source",
+    "src",
+    "module",
+    "inject",
+    "mocking",
+    "mocks",
+    "stubs",
+    "testing",
+    "di"
+  ],
+  "dependencies": {
+    "sandboxed-module": "~0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
