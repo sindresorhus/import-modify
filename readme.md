@@ -14,6 +14,8 @@ npm install --save require-modify
 
 ## Example
 
+Replace some text.
+
 ```
 // greet.js
 module.exports = function () {
@@ -30,6 +32,30 @@ var greet = requireModify('./greet', function (source) {
 
 greet();
 //=> yo
+```
+
+## Example 2
+
+Expose a local variable.
+
+```
+// greet.js
+var greet = function () {
+	console.log('hello');
+};
+```
+
+```js
+var requireModify = require('require-modify');
+
+var greet = requireModify('./greet', function (source) {
+	return source + ';module.exports = greet;';
+	// the starting semicolon is in case the user have
+	// forgotten a semicolon on the last statement
+});
+
+greet();
+//=> hello
 ```
 
 
