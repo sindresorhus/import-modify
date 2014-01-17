@@ -16,7 +16,7 @@ npm install --save require-modify
 
 Replace some text.
 
-```
+```js
 // greet.js
 module.exports = function () {
 	console.log('hello');
@@ -38,7 +38,7 @@ greet();
 
 Expose a local variable.
 
-```
+```js
 // greet.js
 var greet = function () {
 	console.log('hello');
