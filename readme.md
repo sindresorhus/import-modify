@@ -50,7 +50,7 @@ var requireModify = require('require-modify');
 
 var greet = requireModify('./greet', function (source) {
 	return source + ';module.exports = greet;';
-	// the starting semicolon is in case the user have
+	// the leading semicolon is in case the user have
 	// forgotten a semicolon on the last statement
 });
 
