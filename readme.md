@@ -4,7 +4,7 @@
 
 ## Install
 
-```bash
+```sh
 $ npm install --save require-modify
 ```
 
@@ -63,17 +63,17 @@ greet();
 #### moduleId
 
 *Required*  
-Type: `String`
+Type: `string`
 
 Same as you would use in `require()`.
 
 #### callback(source)
 
-Type: `Function`
+Type: `function`
 
 Callback where you can modify the source and return the new one.
 
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)
