@@ -33,7 +33,7 @@
     "di"
   ],
   "dependencies": {
-    "sandboxed-module": "^1.0.1"
+    "sandboxed-module": "^2.0.0"
   },
   "devDependencies": {
     "mocha": "*"
