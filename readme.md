@@ -4,7 +4,7 @@
 
 ## Install
 
-```sh
+```
 $ npm install --save require-modify
 ```
 
@@ -15,20 +15,20 @@ Replace some text.
 
 ```js
 // greet.js
-module.exports = function () {
+module.exports = () => {
 	console.log('hello');
 };
 ```
 
 ```js
-var requireModify = require('require-modify');
+const requireModify = require('require-modify');
 
-var greet = requireModify('./greet', function (source) {
+const greet = requireModify('./greet', source => {
 	return source.replace('hello', 'yo');
 });
 
 greet();
-//=> yo
+//=> 'yo'
 ```
 
 ## Example 2
@@ -37,32 +37,31 @@ Expose a local variable.
 
 ```js
 // greet.js
-var greet = function () {
+const greet = () => {
 	console.log('hello');
 };
 ```
 
 ```js
-var requireModify = require('require-modify');
+const requireModify = require('require-modify');
 
-var greet = requireModify('./greet', function (source) {
+const greet = requireModify('./greet', source => {
 	return source + ';module.exports = greet;';
 	// the leading semicolon is in case the user has
 	// forgotten a semicolon on the last statement
 });
 
 greet();
-//=> hello
+//=> 'hello'
 ```
 
 
 ## API
 
-### requireModify(moduleId, callback)
+### requireModify(moduleId, [callback])
 
 #### moduleId
 
-*Required*  
 Type: `string`
 
 Same as you would use in `require()`.
