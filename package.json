@@ -1,6 +1,6 @@
 {
   "name": "import-modify",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Modify the source of an imported module",
   "license": "MIT",
   "repository": "sindresorhus/import-modify",
