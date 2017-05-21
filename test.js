@@ -1,11 +1,7 @@
-'use strict';
-var assert = require('assert');
-var requireModify = require('./');
+import test from 'ava';
+import m from '.';
 
-it('should modify the source of the required module', function () {
-	var fixture = requireModify('./fixture', function (src) {
-		return src + 'module.exports = \'unicorns\';';
-	});
-
-	assert.equal(fixture, 'unicorns');
+test(t => {
+	const fixture = m('./fixture', src => `${src}module.exports = 'unicorns';`);
+	t.is(fixture, 'unicorns');
 });

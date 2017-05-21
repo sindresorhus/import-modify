@@ -1,24 +1,25 @@
 {
-  "name": "require-modify",
+  "name": "import-modify",
   "version": "2.0.0",
-  "description": "Modify the source of a required module",
+  "description": "Modify the source of an imported module",
   "license": "MIT",
-  "repository": "sindresorhus/require-modify",
+  "repository": "sindresorhus/import-modify",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
   ],
   "keywords": [
+    "import",
     "require",
     "modify",
     "transform",
@@ -29,13 +30,13 @@
     "mocking",
     "mocks",
     "stubs",
-    "testing",
-    "di"
+    "testing"
   ],
   "dependencies": {
     "sandboxed-module": "^2.0.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "ava": "*",
+    "xo": "*"
   }
 }

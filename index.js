@@ -1,10 +1,6 @@
 'use strict';
-var SandboxedModule = require('sandboxed-module');
+const SandboxedModule = require('sandboxed-module');
 
-module.exports = function (moduleId, cb) {
-	return cb ? SandboxedModule.require(moduleId, {
-		sourceTransformers: {
-			modify: cb
-		}
-	}) : require(moduleId);
-};
+module.exports = (moduleId, modify) => SandboxedModule.require(moduleId, {
+	sourceTransformers: {modify}
+});
