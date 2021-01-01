@@ -1,4 +1,4 @@
-# import-modify [![Build Status](https://travis-ci.org/sindresorhus/import-modify.svg?branch=master)](https://travis-ci.org/sindresorhus/import-modify)
+# import-modify
 
 > Modify the source of an imported module
 
